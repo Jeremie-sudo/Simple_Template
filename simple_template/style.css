@@ -1,0 +1,162 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 10px;
+  background-color: beige;
+}
+/* i added this nav to be top of everything and give it to her a position fixed to fix her position */
+nav {
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* ///////////////// */
+/** p dans tele*/
+.telec p a {
+  color: green;
+  margin-left: 10%;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: beige;
+}
+/*****  Barre de navigation******/
+nav {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  background-color: #2d7200;
+  padding-bottom: 0px;
+}
+/***** Menu******/
+.menu {
+  padding-top: 10px;
+  color: white;
+  font-size: 15px;
+  display: none;
+}
+nav p {
+  text-shadow: 15px rgb(177, 117, 27);
+}
+header li {
+  float: left;
+  font-size: 1.2em;
+}
+header li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+}
+
+/***** imAge principale****/
+#ImagePrincipale {
+  padding-bottom: 150px;
+  background: url(media/Diapositive1.PNG) no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 200px;
+  width: 100%;
+}
+/***** Disposition du message d'acceuil****/
+#MessageAcceuil {
+  padding: 0px 20%;
+  text-align: justify;
+}
+#title {
+  margin-left: 150px;
+  margin-top: 30px;
+}
+/***** Les images de présentation des langages****/
+#debutant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 5%;
+}
+.presentation {
+  margin: 20px;
+}
+.presentation h4 {
+  font-family: cursive;
+  text-align: center;
+}
+.presentation img {
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px 0px rgb(177, 117, 27);
+  transform: scale(0.9);
+  height: 200px;
+  width: 300px;
+}
+.presentation img:hover {
+  opacity: 0.5;
+  transform: scale(1.02);
+  transition: 0.3s ease-in-out;
+}
+.presentation1 img {
+  height: 350px;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px 0px rgb(177, 117, 27);
+}
+#pied {
+  background-color: #2d7200;
+}
+#foot-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 5%;
+}
+#createur img {
+  zoom: 0.03;
+  border-radius: 70%;
+}
+#createur p {
+  float: right;
+}
+#social-link {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 95%;
+}
+/* i added this  */
+@media (max-width: 895px) {
+  #ImagePrincipale {
+    height: 120px;
+  }
+  #social-link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 675px) {
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  nav ul li {
+    display: block;
+  }
+  #title {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  #ImagePrincipale {
+    height: 40px;
+  }
+  #social-link {
+    font-size: 12px;
+  }
+}
